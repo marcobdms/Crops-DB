@@ -1,0 +1,84 @@
+CREATE DATABASE Crops;
+
+USE Crops;
+
+SHOW TABLES;
+
+CREATE TABLE Plants(
+ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CommonName VARCHAR(255),
+ScientificName VARCHAR(255),
+CultivationTime INT,
+Characteristics TEXT,
+Diseases TEXT
+);
+
+SELECT * FROM Plants; 
+
+DROP TABLE Plants;
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('1', 'Arroz', 'Oryza sativa', 120, 'Planta Anual que se cultiva en campos inundados.', 'manchas foliares y pulgones');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('2', 'Maiz', 'Zea mays', 90, 'Cereal de gran altura con mazrocas comestibles.', 'Roya y gusano cogollero');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('3', 'Guandú', 'Cajanus cajan', 150, 'Arbusto perenne con vainas comestibles.', 'Pudrición de la raíz, pulgones');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('4', 'Mothbean', 'Vigna aconitifolia', 60, 'Legumbre de grano pequeño.', 'Antracnosis, marchitez por Fusarium');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('5', 'Frijol Mungo', 'Vigna radiata', 90, 'Legumbre con granos verdes.', 'Antracnosis, mosca blanca');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('6', 'Frijol Negro', 'Vigna mungo', 100, 'Legumbre de grano negro.', 'Antracnosis, gorgojos');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('7', 'Lenteja', 'Lens culinaris', 120, 'Legumbre pequeña de grano comestible.', 'Roya, mildiú polvoriento');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('8', 'Granada', 'Punica granatum', 365, 'Árbol frutal con frutos jugosos.', 'Manchas foliares, pulgones');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('9', 'Plátano', 'Musa spp.', 270, 'Árbol tropical con frutos amarillos.', 'Sigatoka negra, marchitez por Fusarium');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('10', 'Frijol Kidney', 'Phaseolus vulgaris', 80, 'Legumbre de forma característica.', 'Marchitez bacteriana, antracnosis');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('11', 'Garbanzo', 'Cicer arietinum', 90, 'Legumbre de grano comestible.', 'Pudrición de la raíz, mildiú polvoriento');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('12', 'Mango', 'Mangifera indica', 120, 'Árbol frutal con frutos dulces.', 'Oidio, cochinilla');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('13', 'Uva', 'Vitis vinifera', 70, 'Planta trepadora de fruta dulce.', 'Mildiu, podredumbre de las raices');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('14', 'Sandía', 'Citrullus lanatus', 100, 'Fruta grande rica en agua y sales.', 'Mildiu, oidio de las cucurbitaceas');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('15', 'Melón', 'Cucumis melo', 90, 'Fruta grande jugosa, aromática y dulce.', 'Fusariosis, pulgón del melón');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('16', 'Manzana', 'Malus domestica', 365, 'Árbol caucifolio de fruta dulce.', 'Fuego bacteriano, moteado del manzano');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('17', 'Naranja', 'Citrus sinensis', 365, 'Árbol con fruta cítrica y anaranjado.', 'Antracnosis, ácaros');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('18', 'Papaya', 'Carica papaya', 240, 'Árbol de fruta tropical y dulce.', 'Mancha anular, pudrición de la raíz');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('19', 'Coco', 'Cocos nucifera', 240, 'Árbol tropical con fruta rica en fibra.', 'Amarillamiento letal, ácaro del coco');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('20', 'Algodón', 'Gossypium', 180, 'Planta textil de fibra suave.', 'Marchitamiento fúngico, bemisa tabaci');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('21', 'Yute', 'Corchorus capsularis', 120, 'Planta textil de fibra resistente y duradera.', 'Manchas marrones, orugas');
+
+INSERT INTO Plants (ID, CommonName, ScientificName, CultivationTime, Characteristics, Diseases)
+VALUES ('22', 'Café', 'Coffea', 334, 'Planta tropical de la que se obtienen granos de café.', 'Roya, barrenadores del tallo');
